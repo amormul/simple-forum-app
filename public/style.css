@@ -1,0 +1,42 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* Категории */
+.category-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.category-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Кнопки */
+.btn-primary {
+    background: linear-gradient(45deg, #0095f6, #6c63ff);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #6c63ff, #0095f6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background-color: #ffffff;
+    color: #8e8e8e;
+    font-size: 10px;
+}
