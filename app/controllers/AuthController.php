@@ -9,7 +9,7 @@ class AuthController extends Controller {
             exit;
         }
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $userModel = $this->model('User');                            //модель юзера
+            $userModel = $this->model('User');                                 //модель юзера
             $email = $_POST['email'];
             $password = $_POST['password'];
             if ($userModel->login($email, $password)) {
