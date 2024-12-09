@@ -42,7 +42,7 @@ class Router {
      */
     protected function parseUrl(): ?array {
         if (isset($_GET['url'])) {
-            return explode('/', rtrim($_GET['url'], '/'));    //разбивает строку на массив
+            return explode('/', rtrim($_GET['url'], '/'));                      //разбивает строку на массив
         }
         return null;
     }
