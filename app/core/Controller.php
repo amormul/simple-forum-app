@@ -14,7 +14,7 @@ class Controller {
      * @return void
      */
     protected function view(string $view, array $data = []): void {
-        extract($data);                                                                //извлекает переменные из массива
+        extract($data);                                                                      //извлекает переменные из массива
         require_once '../app/views/template/default.php';
     }
     /**
@@ -23,6 +23,6 @@ class Controller {
      */
     protected function model(string $model): object {
         require_once '../app/models/' . $model . '.php';
-        return new $model();                                                                  //создает новый объект
+        return new $model();                                                                 //создает новый объект
     }
 }
